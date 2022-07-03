@@ -10,14 +10,20 @@ for (clk of buttons) {
       // screen.value = "It's " + screenValue;
     } else if (btnTxt == "C") {
       screenValue = "";
-      screen.value = screenValue;
+      screenValue2 = screenValue;
+      screenValue3 = screenValue2.replace("*","x");
+      screen.value = screenValue3;
     } else if (btnTxt == "X") {
       btnTxt = "*";
       screenValue += btnTxt;
-      screen.value = screenValue;
+      screenValue2 = screenValue;
+      screenValue3 = screenValue2.replace("*","x");
+      screen.value = screenValue3;
     } else {
       screenValue += btnTxt;
-      screen.value = screenValue;
+      screenValue2 = screenValue;
+      screenValue3 = screenValue2.replace("*","x");
+      screen.value = screenValue3;
     }
   });
 }
